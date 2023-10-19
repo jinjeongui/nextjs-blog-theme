@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+   
+
+<style>
+    table{
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td, td{
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:ntd-child(even){
+        background-color: #dddddd;
+    }
+
+    * {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+
+    /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+</style>  
+
+<link rel="stylesheet" href=styles.css>
+
+</head>
+<body>
+   
+   <div class="header">
+    <h1>
+        친구관리 사이트
+    </h1>
+  </div>
+  
+  <div class="row">
+    <div class="col-3 menu">
+        <table>
+            <tr>
+                    <td></td>
+                    <td>이름</td>
+                    <td>관계</td>
+                    <td>전화번호</td>
+                    <td>생일</td>
+                    
+               
+            </tr>
+            
+            <tr>
+            <ui>
+                <td>1</td>
+                <td><li><a href="view.html">김민서</a></li></td>
+                <td>동생</td>
+                <td>010-1234-1234</td>
+                <td>9999.99.99</td>
+                
+            </ui>
+            </tr>
+            <tr>
+            <ui>
+                    <td>2</td>
+                    <td><li><a href="view.html">김민하</a></li></td>
+                    <td>동생</td>
+                    <td>010-1234-1234</td>
+                    <td>9999.99.99</td>
+                    
+                </ui>
+                </tr>
+                <tr>
+                    <ui>
+                        <td>3</td>
+                        <td><li><a href="view.html">김미선</a></li></td>
+                        <td>동생</td>
+                        <td>010-1234-1234</td>
+                        <td>9999.99.99</td>
+                        
+                    </ui>
+                    </tr>
+                    <tr>
+                        <ui>
+                            <td>4</td>
+                            <td><li><a href="view.html">김복유</a></li></td>
+                            <td>동생</td>
+                            <td>010-1234-1234</td>
+                            <td>9999.99.99</td>
+                            
+                        </ui>
+                        </tr>
+                    <tr>
+                            <ui>
+                                <td>5</td>
+                                <td><li><a href="view.html">김건하</a></li></td>
+                                <td>동생</td>
+                                <td>010-1234-1234</td>
+                                <td>9999.99.99</td>
+                                
+                            </ui>
+                            </tr>
+                            <tr>
+                                <ui>
+                                    <td>6</td>
+                                    <td><li><a href="view.html">김서영</a></li></td>
+                                    <td>동생</td>
+                                    <td>010-1234-1234</td>
+                                    <td>9999.99.99</td>
+                                    
+                                </ui>
+                                </tr>            
+            
+        </table>
+    </div>
+
+    <p>
+        <button type="button" onclick="location.href='add.html'">Add</button>
+        
+    </p>
+  
+    <div class="col-6">
+      <h1>진정의의 친구 관리 사이트</h1>
+      <p>한동대학교 20학번이고 전산전자공학부 소속이며 전공은 컴퓨터공학과 제품디자인을 하고 있는 23살 남자, 크리스쳔 진정의의 친구목록이다. 그의 친구에 관한 모든 내용이 여기 입력되어있다.</p>
+    </div>
+  
+    
+</body>
+</html>

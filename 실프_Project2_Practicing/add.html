@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+    <h1>
+        입력페이지
+    </h1>
+
+    <form name="form1" action="form2_ok.php" onsubmit="return validateForm()" method="post">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="">관계</label>
+        <input type="text" id="relationship" name="relationship" required><br><br>
+        <label for="name">전화번호</label>
+        <input type="number" id="phonenumber" name="phonenumber" required><br><br>
+        <label for="name">생일</label>
+        <input type="number" id="birthday" name="birthday" required><br><br>
+        
+        <p>
+            <button onclick ="alert('게시물이 추가됩니다')">추가</button>
+        </p>
+        
+        </form>
+    
+        <script>
+            function validateForm(){
+                var name= document.editForm.name;
+                if(name.value ==""){
+                    alert("이름을 입력하세요")
+                    name.focus();
+                    return false;
+                }
+           
+                if(name.length<2){
+                    alert("이름은 2글자 이상 입력하세요");
+                    name.focus();
+                    return false;
+    
+                }
+    
+                var relationship= document.editForm.relationship;
+                if(relationship.value ==""){
+                    alert("관계를 입력하세요")
+                    relationship.focus();
+                    return false;
+                } 
+                var phonenumber= document.editForm.phonenumber;
+                if(phonenumber.value ==""){
+                    alert("전화번호를 입력하세요")
+                    phonenumber().focus;
+                
+                   return false;
+                }
+            }
+    
+    
+        </script>
+    
+    </form>
+    
+</body>
+</html>
